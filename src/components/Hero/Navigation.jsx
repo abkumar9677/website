@@ -1,14 +1,17 @@
-import React from 'react';
-import { Globe } from 'lucide-react';
+import React from "react";
+import { Globe } from "lucide-react";
 
 const Navigation = () => {
   return (
     <nav className="flex items-center justify-between mb-12">
       <div className="text-white text-2xl font-bold">
-        naeeb<span className="text-orange-500">.</span>
+        Abhishek {/* <span className="text-orange-500"></span> */}
       </div>
       <div className="flex items-center gap-8">
-        <a href="#" className="text-orange-500 font-medium hover:text-orange-400 transition">
+        <a
+          href="#"
+          className="text-orange-500 font-medium hover:text-orange-400 transition"
+        >
           Home
         </a>
         <a href="#" className="text-gray-300 hover:text-white transition">

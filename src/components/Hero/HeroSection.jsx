@@ -41,9 +41,9 @@ const HeroSection = () => {
         <div className="grid grid-cols-2 gap-12 items-center mt-16 relative">
           <div className="space-y-6 z-10">
             <div className="space-y-2">
-              <p className="text-orange-500 text-lg">Hey, I am Naeeb</p>
+              <p className="text-orange-500 text-lg">Hey, I am Abhishek Kumar</p>
               <h1 className="text-6xl font-bold text-white leading-tight">
-                Web developer
+                Software developer
               </h1>
               <p className="text-gray-400 text-lg max-w-md">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -61,8 +61,8 @@ const HeroSection = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4 mt-8 max-w-md">
-              <StatCard label="Years Experience" value="5+" />
-              <StatCard label="Projects Completed" value="50+" />
+              <StatCard label="Years Experience" value="4" />
+              <StatCard label="Projects Completed" value="8+" />
             </div>
 
             <div className="mt-8">

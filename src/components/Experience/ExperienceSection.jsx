@@ -246,7 +246,7 @@ const ExperienceSection = () => {
         {/* Summary Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { value: "3+", label: "Years Experience" },
+            { value: "4", label: "Years Experience" },
             { value: "15+", label: "Projects Completed" },
             { value: "6+", label: "Industries Served" },
             { value: "95%", label: "Client Satisfaction" },

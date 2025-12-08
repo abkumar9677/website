@@ -12,8 +12,8 @@ const TestimonialCard = () => {
           <span className="text-white font-bold text-lg">N</span>
         </div>
         <div>
-          <p className="text-white font-semibold text-sm">Naeeb Ali Akhund</p>
-          <p className="text-gray-400 text-xs">Graphic Designer</p>
+          <p className="text-white font-semibold text-sm">Abhishek Kumar</p>
+          <p className="text-gray-400 text-xs">Software Developer</p>
         </div>
       </div>
     </div>
