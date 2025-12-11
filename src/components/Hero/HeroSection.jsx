@@ -46,8 +46,7 @@ const HeroSection = () => {
                 Software developer
               </h1>
               <p className="text-gray-400 text-lg max-w-md">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                viverra risus vel tortor pretium dignissim.
+                Hey! I'm a software developer who gets excited about turning ideas into reality. I love creating cool stuff that solves real problems.
               </p>
             </div>
 

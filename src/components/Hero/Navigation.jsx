@@ -15,10 +15,13 @@ const Navigation = () => {
           Home
         </a>
         <a href="#" className="text-gray-300 hover:text-white transition">
+          Experience
+        </a>
+        <a href="#" className="text-gray-300 hover:text-white transition">
           Skills
         </a>
         <a href="#" className="text-gray-300 hover:text-white transition">
-          Experience
+          Projects
         </a>
         <a href="#" className="text-gray-300 hover:text-white transition">
           Contact
