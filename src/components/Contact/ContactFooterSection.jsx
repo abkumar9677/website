@@ -264,7 +264,7 @@ const ContactFooterSection = () => {
     camera.position.z = 5;
 
     const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCount = 200;
+    const particlesCount = 50;
     const positions = new Float32Array(particlesCount * 3);
     const colors = new Float32Array(particlesCount * 3);
 

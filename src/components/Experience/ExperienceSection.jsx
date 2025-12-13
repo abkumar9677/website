@@ -84,7 +84,7 @@ const ExperienceSection = () => {
 
     // Create floating particles
     const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCount = 100;
+    const particlesCount = 50;
     const posArray = new Float32Array(particlesCount * 3);
 
     for (let i = 0; i < particlesCount * 3; i++) {
@@ -113,9 +113,9 @@ const ExperienceSection = () => {
     // Create geometric shapes
     const shapes = [];
     const geometries = [
-      new THREE.TorusGeometry(0.3, 0.1, 16, 100),
-      new THREE.OctahedronGeometry(0.3),
-      new THREE.IcosahedronGeometry(0.3),
+      new THREE.TorusGeometry(0.2, 0.1, 12, 80),
+      new THREE.OctahedronGeometry(0.2),
+      new THREE.IcosahedronGeometry(0.2),
     ];
 
     geometries.forEach((geometry, index) => {
