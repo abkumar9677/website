@@ -60,7 +60,7 @@ const HeroSection = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4 mt-8 max-w-md">
-              <StatCard label="Years Experience" value="4" />
+              <StatCard label="Years Experience" value="5" />
               <StatCard label="Projects Completed" value="8+" />
             </div>
 
