@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+catalyst-deploy.zip
 *.local
 .env
 .env.*
