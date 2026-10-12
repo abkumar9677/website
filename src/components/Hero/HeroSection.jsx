@@ -23,7 +23,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900  to-gray-900 overflow-hidden">
+    <section id="home" className="min-h-screen bg-gradient-to-br from-gray-900  to-gray-900 overflow-hidden">
       <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
@@ -51,12 +51,19 @@ const HeroSection = () => {
             </div>
 
             <div className="flex gap-4">
-              <button className="bg-orange-500 px-8 py-3 rounded-full text-white font-medium hover:bg-orange-600 transition shadow-lg hover:shadow-xl">
+              <a
+                href="/Abhishek_Kumar_Resume.pdf"
+                download="Abhishek_Kumar_Resume.pdf"
+                className="bg-orange-500 px-8 py-3 rounded-full text-white font-medium hover:bg-orange-600 transition shadow-lg hover:shadow-xl"
+              >
                 Hire Me
-              </button>
-              <button className="border-2 border-white px-8 py-3 rounded-full text-white font-medium hover:bg-white hover:text-gray-900 transition">
+              </a>
+              <a
+                href="#projects"
+                className="border-2 border-white px-8 py-3 rounded-full text-white font-medium hover:bg-white hover:text-gray-900 transition"
+              >
                 Projects
-              </button>
+              </a>
             </div>
 
             <div className="grid grid-cols-2 gap-4 mt-8 max-w-md">
@@ -119,7 +126,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -122,7 +122,7 @@ const SkillsSection = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden py-20">
+    <section id="skills" className="relative min-h-screen bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden py-20">
       <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -149,7 +149,7 @@ const SkillsSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

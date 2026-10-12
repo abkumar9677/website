@@ -20,8 +20,8 @@ const ContactInfo = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Noida, Uttar Pradesh, India",
-      link: "https://maps.google.com/?q=Noida,UP",
+      value: "Gurugram, Haryana, India",
+      link: "https://maps.google.com/?q=Gurugram,Haryana",
       gradient: "from-purple-500 to-pink-500",
     },
   ];

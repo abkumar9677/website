@@ -150,8 +150,8 @@ const ContactInfo = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Noida, Uttar Pradesh, India',
-      link: 'https://maps.google.com/?q=Noida,UP',
+      value: 'Gurugram, Haryana, India',
+      link: 'https://maps.google.com/?q=Gurugram,Haryana',
       gradient: 'from-purple-500 to-pink-500',
     },
   ];
@@ -247,6 +247,19 @@ const ScrollToTop = () => {
 
 const ContactFooterSection = () => {
   const canvasRef = useRef(null);
+  const quickLinks = [
+    { label: 'About', href: '#home' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Projects', href: '#projects' },
+  ];
+  const footerLinks = [
+    { label: 'Home', href: '#home' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Contact', href: '#contact' },
+  ];
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -330,7 +343,7 @@ const ContactFooterSection = () => {
   }, []);
 
   return (
-    <div className="relative bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
+    <section id="contact" className="relative bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
       <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
@@ -372,13 +385,13 @@ const ContactFooterSection = () => {
             <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black rounded-2xl p-6 border-2 border-gray-700">
               <h4 className="text-xl font-bold text-white mb-4">Quick Links</h4>
               <div className="grid grid-cols-2 gap-3">
-                {['About', 'Experience', 'Skills', 'Projects'].map((link, index) => (
+                {quickLinks.map((link, index) => (
                   <a
                     key={index}
-                    href={`#${link.toLowerCase()}`}
+                    href={link.href}
                     className="px-4 py-3 bg-gray-800 rounded-xl text-gray-300 hover:text-orange-400 hover:bg-gray-700 transition-all text-center"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 ))}
               </div>
@@ -403,10 +416,10 @@ const ContactFooterSection = () => {
             <div>
               <h4 className="text-xl font-bold text-white mb-4">Navigation</h4>
               <ul className="space-y-2">
-                {['Home', 'Experience', 'Skills', 'Projects', 'Contact'].map((item, index) => (
+                {footerLinks.map((item, index) => (
                   <li key={index}>
-                    <a href={`#${item.toLowerCase()}`} className="text-gray-400 hover:text-orange-400 transition-colors">
-                      {item}
+                    <a href={item.href} className="text-gray-400 hover:text-orange-400 transition-colors">
+                      {item.label}
                     </a>
                   </li>
                 ))}
@@ -445,7 +458,7 @@ const ContactFooterSection = () => {
       </footer>
 
       <ScrollToTop />
-    </div>
+    </section>
   );
 };
 

@@ -174,7 +174,7 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden py-20">
+    <section id="projects" className="relative min-h-screen bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden py-20">
       <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -222,14 +222,17 @@ const ProjectsSection = () => {
             <p className="text-gray-400 mb-8 max-w-2xl">
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
             </p>
-            <button className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl text-white font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/50 transition-all hover:scale-105 flex items-center gap-3 mx-auto">
+            <a
+              href="#contact"
+              className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl text-white font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/50 transition-all hover:scale-105 flex items-center gap-3 mx-auto"
+            >
               Let's Talk
               <ExternalLink className="w-5 h-5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

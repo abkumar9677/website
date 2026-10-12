@@ -12,7 +12,7 @@ const ExperienceSection = () => {
     {
       title: "Developer-2 Full Stack",
       company: "Cloud Analogy",
-      location: "Noida, U.P.",
+      location: "Gurugram, Haryana",
       duration: "01/2023 - Present",
       achievements: [
         "Developed end-to-end construction of resilient applications using MERN stack architecture, accelerating system performance by 30% and boosting user engagement metrics",
@@ -209,7 +209,7 @@ const ExperienceSection = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-gray-900  to-gray-900 overflow-hidden">
+    <section id="experience" className="relative min-h-screen bg-gradient-to-b from-gray-900  to-gray-900 overflow-hidden">
       {/* 3D Canvas Background */}
       <canvas
         ref={canvasRef}
@@ -263,7 +263,7 @@ const ExperienceSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
